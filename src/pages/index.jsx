@@ -8,16 +8,13 @@ import { GraphQLClient } from "graphql-request";
 import MainInfoArticle from "@/components/mainInfoArticle";
 
 // GraphQL queries
-import { mainInfoArticleQuery } from "@/lib/queries";
+import { mainInfoArticleQuery } from "../lib/queries";
 
 // Fonts
 const dDicapslock = localFont({ src: "../../public/fonts/dDicapslock.ttf" });
 const rubik = Rubik({ subsets: ["latin"]})
 
-export default function Home({ mainInfoArticleData }) { 
-    console.log(mainInfoArticleData.articles[0].id);
-    
-  
+export default function Home({ mainInfoArticleData }) {     
   return (
     <>
       {/* Head */}
