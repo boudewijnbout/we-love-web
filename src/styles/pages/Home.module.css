@@ -1,0 +1,35 @@
+/*--------------------------------------------------------------
+# Main
+--------------------------------------------------------------*/
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "mainContent mainArticle mainArticle"
+        "mainContentArticle . .";
+    grid-gap: 2rem;
+}
+
+/*--------------------------------------------------------------
+# Main content section
+--------------------------------------------------------------*/
+.section {
+    grid-area: mainContent;
+}
+
+.section h1 {
+    font-size: 4rem;
+    font-weight: 100;
+    margin-bottom: 1.5rem;
+}
+
+.section h1 span {
+    color: var(--accent);
+}
+
+.section p {
+    font-size: 0.95rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}

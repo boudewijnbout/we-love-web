@@ -1,0 +1,49 @@
+/*--------------------------------------------------------------
+# Main info article
+--------------------------------------------------------------*/
+
+.article {
+    grid-area: mainContentArticle;
+    position: relative;
+}
+
+/*--------------------------------------------------------------
+# Author information
+--------------------------------------------------------------*/
+
+.authorInfo {
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-primary);
+    position: absolute;
+    border-bottom-right-radius: 1.25rem;
+    padding: 0.5rem;
+    left: 0;
+}
+
+.authorInfo picture {
+    width: 2rem;
+    height: 2rem;
+}
+.authorInfo img {
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/*--------------------------------------------------------------
+# Article image
+--------------------------------------------------------------*/
+
+.articleThumbnail {
+    width: 100%;
+    height: 100vh;
+}
+
+.articleThumbnail img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 1.25rem;
+}
