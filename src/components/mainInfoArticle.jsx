@@ -1,13 +1,6 @@
 import styles from "../styles/components/mainInfoArticle.module.css";
 
-interface mainInfoArticleProps {
-    title: string,
-    image: string,
-    authorImage: string,
-    authorName: string,
-}
-
-export default function mainInfoArticle({title, image, authorImage, authorName}: mainInfoArticleProps) {
+export default function mainInfoArticle({title, image, authorImage, authorName}) {
     return (
         <>
             <article className={styles.article}>

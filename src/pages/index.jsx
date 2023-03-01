@@ -14,7 +14,7 @@ import { mainInfoArticleQuery } from "@/lib/queries";
 const dDicapslock = localFont({ src: "../../public/fonts/dDicapslock.ttf" });
 const rubik = Rubik({ subsets: ["latin"]})
 
-export default function Home({ mainInfoArticleData }: any) { 
+export default function Home({ mainInfoArticleData }) { 
     console.log(mainInfoArticleData.articles[0].id);
     
   
@@ -38,7 +38,7 @@ export default function Home({ mainInfoArticleData }: any) {
         </section>
 
         {/* Main info article */}
-        {mainInfoArticleData.articles.map((article:any) => (          
+        {mainInfoArticleData.articles.map((article) => (          
           <MainInfoArticle key={article.id} title={article.title} image={article.image.url} authorImage={article.author.image.url} authorName={article.author.name} />
         ))}
       </main>
