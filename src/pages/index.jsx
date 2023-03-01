@@ -1,11 +1,11 @@
 import Head from "next/head";
-import styles from "@/styles/pages/Home.module.css";
+import styles from "../styles/pages/Home.module.css";
 import localFont from "next/font/local";
 import {Rubik} from "next/font/google";
 import { GraphQLClient } from "graphql-request";
 
 // Components
-import MainInfoArticle from "@/components/mainInfoArticle";
+import MainInfoArticle from "../components/mainInfoArticle";
 
 // GraphQL queries
 import { mainInfoArticleQuery } from "../lib/queries";
