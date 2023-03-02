@@ -1,9 +1,9 @@
-import styles from "../styles/components/mainInfoArticle.module.css";
+import styles from "../styles/components/mainArticle.module.css";
 import { Rubik } from "next/font/google";
 const rubik = Rubik({ subsets: ["latin"] });
 const cx = (...classNames) => classNames.join(" ");
 
-export default function mainInfoArticle({
+export default function mainArticle({
 	title,
 	image,
 	readTime,
@@ -26,6 +26,8 @@ export default function mainInfoArticle({
 				<picture className={styles.articleThumbnail}>
 					<img src={image} />
 				</picture>
+
+				<h1>{title}</h1>
 			</article>
 		</>
 	);

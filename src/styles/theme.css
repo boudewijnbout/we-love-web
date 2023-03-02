@@ -3,7 +3,8 @@
 --------------------------------------------------------------*/
 
 :root {
-    --bg-primary: #030303;
+    --bg-dark: #030303;
+    --bg-light: #FAFAFA;
     --bg-secondary: #1C1D1F;
     --accent: #00CBA0;
     --color-white: #FFFFFF;

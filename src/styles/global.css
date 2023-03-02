@@ -16,10 +16,21 @@ html, body {
 }
 
 body {
-    background-color: var(--bg-primary);
-    color: #fff;
+    background-color: var(--bg-light);
+    color: var(--bg-dark);
 }
 
 main {
     padding: 6.2rem 6.2rem 0 9.5rem;
+}
+
+/*--------------------------------------------------------------
+# Darkmode
+--------------------------------------------------------------*/
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--bg-dark);
+        color: var(--bg-light);
+    }
 }
