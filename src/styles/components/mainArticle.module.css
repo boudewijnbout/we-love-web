@@ -51,6 +51,25 @@
 }
 
 /*--------------------------------------------------------------
+# Article title
+--------------------------------------------------------------*/
+
+.articleTitle {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bg-light);
+    border-top-left-radius: 1.25rem;
+    padding: 0.5rem;
+    text-transform: capitalize;
+}
+
+.articleTitle h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+/*--------------------------------------------------------------
 # Article image
 --------------------------------------------------------------*/
 
@@ -88,6 +107,10 @@
 
 @media (prefers-color-scheme: dark) {
     .authorInfo {
+        background-color: var(--bg-dark);
+    }
+
+    .articleTitle {
         background-color: var(--bg-dark);
     }
 }

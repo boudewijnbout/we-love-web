@@ -24,6 +24,11 @@ export default function mainArticle({
 					<p className={cx(rubik.className, styles.p)}>{readTime} min</p>
 				</div>
 
+				{/* Article title */}
+				<div className={styles.articleTitle}>
+					<h2 className={rubik.className}>{title}</h2>
+				</div>
+
 				{/* Article thumbnail image */}
 				<picture className={styles.articleThumbnail}>
 					<img src={image} />

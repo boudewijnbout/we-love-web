@@ -65,11 +65,33 @@
 }
 
 /*--------------------------------------------------------------
+# Article title
+--------------------------------------------------------------*/
+
+.articleTitle {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bg-light);
+    border-top-left-radius: 1.25rem;
+    padding: 0.5rem;
+    text-transform: capitalize
+}
+
+.articleTitle h3 {
+    font-weight: 500;
+}
+
+/*--------------------------------------------------------------
 # Darkmode
 --------------------------------------------------------------*/
 
 @media (prefers-color-scheme: dark) {
     .authorInfo {
+        background-color: var(--bg-dark);
+    }
+
+    .articleTitle {
         background-color: var(--bg-dark);
     }
 }
