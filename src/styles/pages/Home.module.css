@@ -23,8 +23,19 @@
     margin-bottom: 1.5rem;
 }
 
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+
 .section h1 span {
-    color: var(--accent);
+    background: linear-gradient(to right, #FAFAFA 20%, #00CBA0 40%, #00CBA0 60%, #FAFAFA 80%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 2.5s linear infinite;
 }
 
 .section p {
