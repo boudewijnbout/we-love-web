@@ -1,11 +1,11 @@
-import styles from "../styles/components/mainArticle.module.css";
+import styles from "../styles/components/regularArticle.module.css";
 
 // Fonts
 import { Rubik } from "next/font/google";
 const rubik = Rubik({ subsets: ["latin"] });
 const cx = (...classNames) => classNames.join(" ");
 
-export default function mainArticle({
+export default function regularArticle({
 	title,
 	image,
 	readTime,
@@ -26,7 +26,7 @@ export default function mainArticle({
 
 				{/* Article thumbnail image */}
 				<picture className={styles.articleThumbnail}>
-					<img src={image} />
+					<img src={image} alt="" />
 				</picture>
 			</article>
 		</>

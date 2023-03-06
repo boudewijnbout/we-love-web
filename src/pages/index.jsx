@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import styles from "../styles/pages/Home.module.css";
 import localFont from "next/font/local";
@@ -7,15 +8,24 @@ import { GraphQLClient } from "graphql-request";
 // Components
 import MainInfoArticle from "../components/mainInfoArticle";
 import MainArticle from "../components/mainArticle";
+import RegularArticles from "../components/regularArticles";
 
 // GraphQL queries
-import { mainInfoArticleQuery, mainArticleQuery } from "../lib/queries";
+import {
+	mainInfoArticleQuery,
+	mainArticleQuery,
+	articlesQuery,
+} from "../lib/queries";
 
 // Fonts
 const dDicapslock = localFont({ src: "../../public/fonts/dDicapslock.ttf" });
 const rubik = Rubik({ subsets: ["latin"] });
 
-export default function Home({ mainInfoArticleData, mainArticleData }) {
+export default function Home({
+	mainInfoArticleData,
+	mainArticleData,
+	articlesData,
+}) {
 	return (
 		<>
 			{/* Head */}
@@ -52,6 +62,7 @@ export default function Home({ mainInfoArticleData, mainArticleData }) {
 						/>
 					))}
 				</section>
+
 				{/* Main article */}
 				{mainArticleData.articles.map((article) => (
 					<MainArticle
@@ -63,6 +74,9 @@ export default function Home({ mainInfoArticleData, mainArticleData }) {
 						authorName={article.author.name}
 					/>
 				))}
+
+				{/* All articles  */}
+				<RegularArticles articlesData={articlesData} />
 			</main>
 		</>
 	);
@@ -72,11 +86,13 @@ export async function getServerSideProps() {
 	const hygraph = new GraphQLClient(process.env.HYGRAPH_ENDPOINT || "");
 	const mainInfoArticleData = await hygraph.request(mainInfoArticleQuery);
 	const mainArticleData = await hygraph.request(mainArticleQuery);
+	const articlesData = await hygraph.request(articlesQuery);
 
 	return {
 		props: {
 			mainInfoArticleData,
 			mainArticleData,
+			articlesData,
 		},
 	};
 }

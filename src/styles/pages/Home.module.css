@@ -3,9 +3,7 @@
 --------------------------------------------------------------*/
 
 .main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
     grid-template-areas: "mainContent mainArticle mainArticle"
         "mainContentArticle articles articles";
     grid-gap: 2rem;
@@ -32,4 +30,22 @@
 .section p {
     font-size: 0.95rem;
     font-weight: 400;
+}
+
+/*--------------------------------------------------------------
+# Media querys
+--------------------------------------------------------------*/
+
+@media (min-width: 60rem) {
+    .main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0;
+    }
+}
+
+@media (min-width: 75rem) {
+    .main {
+        grid-gap: 1rem;
+    }
 }

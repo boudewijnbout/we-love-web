@@ -5,6 +5,8 @@
 .article {
     grid-area: mainArticle;
     position: relative;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 /*--------------------------------------------------------------
@@ -62,6 +64,22 @@
     height: inherit;
     object-fit: cover;
     border-radius: 1.25rem;
+}
+
+/*--------------------------------------------------------------
+# Media querys
+--------------------------------------------------------------*/
+
+@media (min-width: 60rem) {
+    .article {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 75rem) {
+    .article {
+        margin-bottom: 0;
+    }
 }
 
 /*--------------------------------------------------------------
