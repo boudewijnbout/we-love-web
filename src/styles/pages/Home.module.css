@@ -60,3 +60,19 @@
         grid-gap: 1rem;
     }
 }
+
+/*--------------------------------------------------------------
+# Darkmode
+--------------------------------------------------------------*/
+
+@media (prefers-color-scheme: dark) {
+    .section h1 span {
+        background: linear-gradient(to right, #030303 20%, #00CBA0 40%, #00CBA0 60%, #030303 80%);
+        animation: shine 2.5s linear infinite;
+        background-size: 200% auto;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 2.5s linear infinite;
+    }
+}
