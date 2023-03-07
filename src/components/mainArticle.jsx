@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import styles from "../styles/components/mainArticle.module.css";
 
 // Fonts
@@ -31,7 +33,7 @@ export default function mainArticle({
 
 				{/* Article thumbnail image */}
 				<picture className={styles.articleThumbnail}>
-					<img src={image} />
+					<Image src={image} fill alt="" />
 				</picture>
 			</article>
 		</>

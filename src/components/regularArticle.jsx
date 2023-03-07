@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import styles from "../styles/components/regularArticle.module.css";
 
 // Fonts
@@ -31,7 +33,7 @@ export default function regularArticle({
 
 				{/* Article thumbnail image */}
 				<picture className={styles.articleThumbnail}>
-					<img src={image} alt="" />
+					<Image src={image} alt="" fill />
 				</picture>
 			</article>
 		</>

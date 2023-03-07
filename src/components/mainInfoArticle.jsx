@@ -1,4 +1,7 @@
+import Image from "next/image";
 import styles from "../styles/components/mainInfoArticle.module.css";
+
+// Fonts
 import { Rubik } from "next/font/google";
 const rubik = Rubik({ subsets: ["latin"] });
 const cx = (...classNames) => classNames.join(" ");
@@ -24,7 +27,7 @@ export default function mainInfoArticle({
 
 				{/* Article thumbnail image */}
 				<picture className={styles.articleThumbnail}>
-					<img src={image} />
+					<Image src={image} fill alt="" />
 				</picture>
 			</article>
 		</>
