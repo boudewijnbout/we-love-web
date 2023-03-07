@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import styles from "../styles/pages/Home.module.css";
 import localFont from "next/font/local";
@@ -49,7 +48,6 @@ export default function Home({
 					<p className={rubik.className}>
 						Een blog om alle gegeven we love web sessies terug te vinden.
 					</p>
-
 					{/* Main info article */}
 					{mainInfoArticleData.articles.map((article) => (
 						<MainInfoArticle

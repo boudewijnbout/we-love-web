@@ -33,7 +33,7 @@ export const mainArticleQuery = `query Articles {
 }`;
 
 export const articlesQuery = `query Articles {
-  articles(last: 2, skip: 2) {
+  articles {
     id 
     title
     readTime
