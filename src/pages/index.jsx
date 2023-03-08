@@ -51,8 +51,10 @@ export default function Home({
 					{/* Main info article */}
 					{mainInfoArticleData.articles.map((article) => (
 						<MainInfoArticle
+							id={article.id}
 							key={article.id}
 							title={article.title}
+							slug={article.slug}
 							image={article.image.url}
 							readTime={article.readTime}
 							authorImage={article.author.image.url}
@@ -66,6 +68,7 @@ export default function Home({
 					<MainArticle
 						key={article.id}
 						title={article.title}
+						slug={article.slug}
 						image={article.image.url}
 						readTime={article.readTime}
 						authorImage={article.author.image.url}

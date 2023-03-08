@@ -11,6 +11,7 @@ export default function allRegularArticles({ articlesData }) {
 					<RegularArticle
 						key={article.id}
 						title={article.title}
+						slug={article.slug}
 						image={article.image.url}
 						readTime={article.readTime}
 						authorImage={article.author.image.url}
