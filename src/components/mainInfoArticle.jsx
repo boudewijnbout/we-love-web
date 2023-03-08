@@ -27,7 +27,12 @@ export default function mainInfoArticle({
 
 				{/* Article thumbnail image */}
 				<picture className={styles.articleThumbnail}>
-					<Image src={image} fill alt="" />
+					<Image
+						src={image}
+						fill
+						alt=""
+						sizes="(min-width: 60rem) 35vw, 100vw"
+					/>
 				</picture>
 			</article>
 		</>
