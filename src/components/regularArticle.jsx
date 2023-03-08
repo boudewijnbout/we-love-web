@@ -38,7 +38,7 @@ export default function regularArticle({
 						alt=""
 						fill
 						sizes="(min-width: 31.25rem) 50vw, 33vw"
-						quality={1}
+						quality={60}
 					/>
 				</picture>
 			</article>
