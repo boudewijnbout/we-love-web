@@ -37,7 +37,7 @@ export default function regularArticle({
 						src={image}
 						alt=""
 						fill
-						sizes="(min-width: 31.25rem) 50vw, 100vw"
+						sizes="(min-width: 31.25rem) 50vw, 33vw"
 					/>
 				</picture>
 			</article>

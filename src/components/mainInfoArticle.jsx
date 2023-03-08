@@ -31,7 +31,7 @@ export default function mainInfoArticle({
 						src={image}
 						fill
 						alt=""
-						sizes="(min-width: 60rem) 35vw, 100vw"
+						sizes="(min-width: 60rem) 35vw, 35vw"
 					/>
 				</picture>
 			</article>
