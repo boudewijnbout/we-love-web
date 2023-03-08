@@ -20,7 +20,7 @@ export default function regularArticle({
 				{/* Author information */}
 				<div className={styles.authorInfo}>
 					<picture>
-						<img src={authorImage} alt="" />
+						<Image src={authorImage} alt="" width={175} height={175} />
 					</picture>
 					<p className={rubik.className}>{authorName}</p>
 					<p className={cx(rubik.className, styles.p)}>{readTime} min</p>
@@ -38,6 +38,7 @@ export default function regularArticle({
 						alt=""
 						fill
 						sizes="(min-width: 31.25rem) 50vw, 33vw"
+						quality={1}
 					/>
 				</picture>
 			</article>

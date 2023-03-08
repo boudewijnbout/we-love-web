@@ -19,7 +19,7 @@ export default function mainInfoArticle({
 				{/* Author information */}
 				<div className={styles.authorInfo}>
 					<picture>
-						<img src={authorImage} alt="" />
+						<Image src={authorImage} alt="" width={175} height={175} />
 					</picture>
 					<p className={rubik.className}>{authorName}</p>
 					<p className={cx(rubik.className, styles.p)}>{readTime} min</p>
@@ -32,6 +32,7 @@ export default function mainInfoArticle({
 						fill
 						alt=""
 						sizes="(min-width: 60rem) 35vw, 35vw"
+						quality={60}
 					/>
 				</picture>
 			</article>

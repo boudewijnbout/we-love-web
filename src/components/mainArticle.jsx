@@ -20,7 +20,7 @@ export default function mainArticle({
 				{/* Author information */}
 				<div className={styles.authorInfo}>
 					<picture>
-						<img src={authorImage} alt="" />
+						<Image src={authorImage} alt="" width={175} height={175} />
 					</picture>
 					<p className={rubik.className}>{authorName}</p>
 					<p className={cx(rubik.className, styles.p)}>{readTime} min</p>
@@ -39,6 +39,7 @@ export default function mainArticle({
 						priority
 						alt=""
 						sizes="(min-width: 60rem) 50vw, (min-width: 31.25rem) 100vw, 50vw"
+						quality={60}
 					/>
 				</picture>
 			</article>
