@@ -1,0 +1,41 @@
+/*--------------------------------------------------------------
+# Detail article
+--------------------------------------------------------------*/
+.article {
+    position: relative;
+    grid-area: detailArticle;
+}
+
+/*--------------------------------------------------------------
+# Detail article thumbnail image
+--------------------------------------------------------------*/
+.picture {
+    height: 40rem;
+    position: relative;
+    display: block;
+}
+
+.picture img {
+    width: inherit;
+    object-fit: cover;
+    height: inherit;
+    border-radius: 1.25rem;
+}
+
+/*--------------------------------------------------------------
+# Detail article title
+--------------------------------------------------------------*/
+.articleTitle {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 1.25rem;
+    padding: 0.75rem;
+    text-transform: capitalize;
+    z-index: 1;
+    background-color: var(--bg-dark);
+}
+
+.articleTitle h1 {
+    font-weight: 500;
+}

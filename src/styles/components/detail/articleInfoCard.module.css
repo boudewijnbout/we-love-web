@@ -1,0 +1,23 @@
+/*--------------------------------------------------------------
+# Detail article info card
+--------------------------------------------------------------*/
+.div {
+    background-color: var(--bg-grey);
+    padding: 1rem 1.25rem;
+    border-radius: 1.25rem;
+}
+
+/*--------------------------------------------------------------
+# Detail article author image
+--------------------------------------------------------------*/
+.picture {
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+.picture img {
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    object-fit: cover;
+}

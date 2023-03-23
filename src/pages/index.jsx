@@ -24,8 +24,9 @@ export default function Home({
 	mainInfoArticleData,
 	mainArticleData,
 	articlesData,
-}) {
-	return (
+})
+{
+    return (
 		<>
 			{/* Head */}
 			<Head>

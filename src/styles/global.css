@@ -2,11 +2,13 @@
 # Global
 --------------------------------------------------------------*/
 
-* {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
+} 
 
 html, body {
     width: 100%;
@@ -20,24 +22,10 @@ body {
     color: var(--bg-dark);
 }
 
-main {
-    padding: 2rem  1.25rem;
-}
-
 a {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
-}
-
-/*--------------------------------------------------------------
-# Media querys
---------------------------------------------------------------*/
-
-@media (min-width: 75rem) {
-    main {
-        padding: 6.2rem 6.2rem 0 5rem;
-    }
 }
 
 /*--------------------------------------------------------------

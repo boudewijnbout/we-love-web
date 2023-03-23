@@ -18,5 +18,6 @@
 @media (min-width: 60rem) {
     .section {
         grid-area: articles;
+        grid-gap: 1.25rem;
     }
 }

@@ -1,0 +1,11 @@
+/*--------------------------------------------------------------
+# Back to overview link
+--------------------------------------------------------------*/
+
+.div {
+    margin: 0.94rem 4.7rem;
+    padding: 0.63rem 1.25rem;
+    border-radius: 1.25rem;
+    background-color: var(--bg-grey);
+    display: inline-block;
+}

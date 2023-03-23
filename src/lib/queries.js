@@ -56,5 +56,18 @@ export const articleIdQuery = `query Article($slug: String) {
   article(where: {slug: $slug}) {
     id
     title
+    image {
+        url
+    }
+    shortDescription
+    body {
+        html
+    }
+    author {
+        name
+        image {
+            url
+        }
+    }
   }
 }`;
