@@ -6,14 +6,21 @@ import styles from "../../styles/components/detail/articleInfoCard.module.css";
 export default function articleInfoCard({authorName, authorImage}) {
     return (
         <>
-            <div className={styles.div}>
+            <section className={styles.section}>
+
                 <span>Auteur:</span>
 
-                <picture className={styles.picture}>
-                    <Image src={authorImage} width="250" height="250"/>
-                </picture>
-                <p>{authorName}</p>
-            </div>
+                <div className={styles.div}>
+                    {/* Author image */}
+                    <picture className={styles.picture}>
+                        <Image src={authorImage} width="250" height="250"/>
+                    </picture>
+
+                    <p>{authorName}</p>
+                </div>
+
+
+            </section>
         </>
     )
 }
