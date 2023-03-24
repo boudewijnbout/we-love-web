@@ -18,3 +18,8 @@
 .aside {
     grid-area: detailArticleInfo;
 }
+
+/* Article body */
+.articleBody {
+    padding: 1.5rem 1.25rem;
+}

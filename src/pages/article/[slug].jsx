@@ -9,6 +9,11 @@ import BackLink from "../../components/detail/backLink";
 import ArticleThumbnail from "../../components/detail/articleThumbnail";
 import ArticleInfoCard from "../../components/detail/articleInfoCard";
 
+// Fonts
+import { Rubik } from "next/font/google";
+const rubik = Rubik({ subsets: ["latin"] });
+const cx = (...classNames) => classNames.join(" ");
+
 export default function ArticleDetail({articleData}) {
 
     articleData = articleData.article;
@@ -25,7 +30,10 @@ export default function ArticleDetail({articleData}) {
 
                 {/* Article additional info*/}
                 <aside className={styles.aside}>
-                    <ArticleInfoCard authorName={articleData.author.name} authorImage={articleData.author.image.url}/>
+                    <ArticleInfoCard authorName={articleData.author.name} authorImage={articleData.author.image.url}
+                                     articleDescription={articleData.shortDescription}/>
+
+                    <p className={cx(styles.articleBody, rubik.className)}>{articleData.body.text}</p>
                 </aside>
             </main>
         </>

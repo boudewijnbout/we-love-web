@@ -3,23 +3,45 @@ import Image from "next/image";
 // Styles
 import styles from "../../styles/components/detail/articleInfoCard.module.css";
 
-export default function articleInfoCard({authorName, authorImage}) {
+// Fonts
+import {Rubik} from "next/font/google";
+
+const rubik = Rubik({subsets: ["latin"]});
+
+export default function articleInfoCard({authorName, authorImage, articleDescription}) {
     return (
         <>
             <section className={styles.section}>
 
-                <span>Auteur:</span>
+                <span className={rubik.className}>Auteur:</span>
 
-                <div className={styles.div}>
+                {/* Author info */}
+                <div className={styles.authorInfo}>
                     {/* Author image */}
-                    <picture className={styles.picture}>
+                    <picture>
                         <Image src={authorImage} width="250" height="250"/>
                     </picture>
 
-                    <p>{authorName}</p>
+                    {/* Author name */}
+                    <p className={rubik.className}>{authorName}</p>
                 </div>
 
+                {/* Short description */}
+                <div className={styles.shortDescription}>
+                    <span className={rubik.className}>Introductie:</span>
+                    <p className={rubik.className}>{articleDescription}</p>
+                </div>
 
+                <div className={styles.articleDates}>
+                    <div>
+                        <span className={rubik.className}>Datum toegevoegd:</span>
+                        <p className={rubik.className}>09-03-2023</p>
+                    </div>
+                    <div>
+                        <span className={rubik.className}>Laatst gewijzigd:</span>
+                        <p className={rubik.className}>15-03-2023</p>
+                    </div>
+                </div>
             </section>
         </>
     )

@@ -61,7 +61,7 @@ export const articleIdQuery = `query Article($slug: String) {
     }
     shortDescription
     body {
-        html
+        text
     }
     author {
         name

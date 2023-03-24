@@ -4,7 +4,6 @@ import Link from "next/link";
 
 // Fonts
 import { Rubik } from "next/font/google";
-import {useState} from "react";
 const rubik = Rubik({ subsets: ["latin"] });
 const cx = (...classNames) => classNames.join(" ");
 

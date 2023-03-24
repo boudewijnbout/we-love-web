@@ -9,22 +9,56 @@
     flex-direction: column;
 }
 
-.div {
-    display: flex;
-    align-items: center;
+.section span {
+    color: var(--color-grey);
+    font-size: 15px;
 }
 
 /*--------------------------------------------------------------
-# Detail article author image
+# Detail article author info
 --------------------------------------------------------------*/
-.picture {
+.authorInfo {
+    display: flex;
+    align-items: center;
+    margin-top: 0.94rem;
+}
+
+/* Author image */
+.authorInfo picture {
     width: 1.75rem;
     height: 1.75rem;
 }
 
-.picture img {
+.authorInfo picture img {
     width: inherit;
     height: inherit;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.authorInfo p {
+    margin-left: 0.94rem;
+}
+
+/*--------------------------------------------------------------
+# Detail article short description
+--------------------------------------------------------------*/
+.shortDescription {
+    margin-top: 0.94rem;
+}
+
+.shortDescription p {
+    margin-top: 0.94rem;
+}
+
+/*--------------------------------------------------------------
+# Detail article dates
+--------------------------------------------------------------*/
+.articleDates {
+    display: flex;
+    margin-top: 0.94rem;
+}
+
+.articleDates div:nth-child(1) {
+    margin-right: 3rem;
 }
