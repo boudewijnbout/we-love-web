@@ -10,7 +10,8 @@
 # Detail article thumbnail image
 --------------------------------------------------------------*/
 .picture {
-    height: 40rem;
+    /*height: 40rem;*/
+    height: 30rem;
     position: relative;
     display: block;
 }

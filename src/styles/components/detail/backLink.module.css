@@ -1,11 +1,20 @@
 /*--------------------------------------------------------------
 # Back to overview link
 --------------------------------------------------------------*/
-
 .div {
-    margin: 0.94rem 4.7rem;
+    margin: 1rem;
     padding: 0.63rem 1.25rem;
     border-radius: 1.25rem;
     background-color: var(--bg-grey);
     display: inline-block;
+    font-size: 0.9rem;
+}
+
+/*--------------------------------------------------------------
+# Media querys
+--------------------------------------------------------------*/
+@media (min-width: 75rem) {
+    .div {
+        margin: 0.94rem 4.7rem;
+    }
 }

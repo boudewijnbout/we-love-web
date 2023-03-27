@@ -1,0 +1,64 @@
+/*--------------------------------------------------------------
+# Other article
+--------------------------------------------------------------*/
+.otherArticle {
+    position: relative;
+}
+
+/*--------------------------------------------------------------
+# Other article thumbnail image
+--------------------------------------------------------------*/
+.otherArticleThumbnail {
+    height: 15rem;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.otherArticleThumbnail img {
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+    border-radius: 1.25rem;
+}
+
+/*--------------------------------------------------------------
+# Other article author info
+--------------------------------------------------------------*/
+.otherArticleAuthorInfo {
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-dark);
+    position: absolute;
+    border-bottom-right-radius: 1.25rem;
+    padding: 0.5rem;
+    left: 0;
+    z-index: 1;
+}
+
+.otherArticleAuthorInfo picture {
+    width: 1.75rem;
+    height: 1.75rem;
+    margin: 0 0.5rem;
+}
+
+.otherArticleAuthorInfo img {
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.otherArticleAuthorInfo p {
+    font-size: 0.8rem;
+}
+
+.otherArticleAuthorInfo p:nth-child(3):before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: var(--accent);
+    border-radius: 50%;
+    margin: 0 0.6rem;
+}

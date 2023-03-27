@@ -4,9 +4,10 @@
 
 .article {
     grid-area: mainContentArticle;
-    position: relative;
     margin-top: 1.5rem;
     display: none;
+    position: sticky;
+    top: 1rem;
 }
 
 /*--------------------------------------------------------------
@@ -89,26 +90,5 @@
 @media (prefers-color-scheme: dark) {
     .authorInfo {
         background-color: var(--bg-dark);
-    }
-}
-
-.pulse {
-    animation: pulse 1.4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-.loadable {
-    border-radius: 1.25rem;
-    overflow: hidden;
-    margin: 0 auto;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
-
-@keyframes pulse {
-    0%,
-    100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.3;
     }
 }

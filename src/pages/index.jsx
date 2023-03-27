@@ -43,10 +43,10 @@ export default function Home({
 			<main className={styles.main}>
 				{/* Main info content */}
 				<section className={styles.section}>
-					<h1 className={dDicapslock.className}>
+					<h1 initial={{y: "-50%"}} animate={{ y: 0}} className={dDicapslock.className}>
 						We <span>Love</span> Web
 					</h1>
-					<p className={rubik.className}>
+					<p exit={{ opacity: 0 }} className={rubik.className}>
 						Een blog om alle gegeven we love web sessies terug te vinden.
 					</p>
 					{/* Main info article */}

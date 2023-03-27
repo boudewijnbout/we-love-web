@@ -1,4 +1,4 @@
-import {articleIdQuery} from "../../lib/queries";
+import {articleIdQuery, otherArticlesQuery} from "../../lib/queries";
 import {GraphQLClient} from "graphql-request";
 
 // Styles
@@ -8,13 +8,15 @@ import styles from "../../styles/pages/Detail.module.css";
 import BackLink from "../../components/detail/backLink";
 import ArticleThumbnail from "../../components/detail/articleThumbnail";
 import ArticleInfoCard from "../../components/detail/articleInfoCard";
+import OtherArticles from "../../components/detail/otherArticles";
 
 // Fonts
-import { Rubik } from "next/font/google";
-const rubik = Rubik({ subsets: ["latin"] });
+import {Rubik} from "next/font/google";
+
+const rubik = Rubik({subsets: ["latin"]});
 const cx = (...classNames) => classNames.join(" ");
 
-export default function ArticleDetail({articleData}) {
+export default function ArticleDetail({articleData, otherArticlesData}) {
 
     articleData = articleData.article;
 
@@ -33,8 +35,12 @@ export default function ArticleDetail({articleData}) {
                     <ArticleInfoCard authorName={articleData.author.name} authorImage={articleData.author.image.url}
                                      articleDescription={articleData.shortDescription}/>
 
-                    <p className={cx(styles.articleBody, rubik.className)}>{articleData.body.text}</p>
+                    {/* Article body text */}
+                    <div className={cx(styles.articleBody, rubik.className)} dangerouslySetInnerHTML={{__html: articleData.body.html}} />
                 </aside>
+
+                {/* Other articles */}
+                <OtherArticles otherArticlesData={otherArticlesData} />
             </main>
         </>
     );
@@ -47,9 +53,12 @@ export async function getServerSideProps({query}) {
         slug: query.slug,
     });
 
+    const otherArticlesData = await hygraph.request(otherArticlesQuery);
+
     return {
         props: {
             articleData,
+            otherArticlesData,
         },
     };
 }

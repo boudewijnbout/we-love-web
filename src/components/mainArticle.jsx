@@ -19,7 +19,7 @@ export default function mainArticle({
                                         authorName,
                                     }) {
     return (
-        <>
+        <>s
             <Link href={`article/${slug}`} className={styles.a}>
                 <article className={styles.article}>
 

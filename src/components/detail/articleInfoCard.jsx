@@ -32,6 +32,7 @@ export default function articleInfoCard({authorName, authorImage, articleDescrip
                     <p className={rubik.className}>{articleDescription}</p>
                 </div>
 
+                {/* Create & Update date */}
                 <div className={styles.articleDates}>
                     <div>
                         <span className={rubik.className}>Datum toegevoegd:</span>

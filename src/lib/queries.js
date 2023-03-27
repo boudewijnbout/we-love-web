@@ -61,7 +61,7 @@ export const articleIdQuery = `query Article($slug: String) {
     }
     shortDescription
     body {
-        text
+        html
     }
     author {
         name
@@ -70,4 +70,21 @@ export const articleIdQuery = `query Article($slug: String) {
         }
     }
   }
+}`;
+
+export const otherArticlesQuery = `query Articles {
+   articles(first: 4) {
+     id
+     title
+     readTime
+     image {
+        url
+     }
+     author {
+        name 
+        image {
+            url
+        }
+     }
+   }
 }`;

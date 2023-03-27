@@ -8,7 +8,6 @@ const rubik = Rubik({ subsets: ["latin"] });
 const cx = (...classNames) => classNames.join(" ");
 
 export default function mainInfoArticle({
-	id,
 	title,
 	slug,
 	image,
@@ -21,6 +20,7 @@ export default function mainInfoArticle({
 		<>
 			<Link href={`/article/${slug}`}>
 				<article className={styles.article}>
+
 					{/* Author information */}
 					<div className={styles.authorInfo}>
 						<picture>
