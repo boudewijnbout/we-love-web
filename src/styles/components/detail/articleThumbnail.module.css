@@ -10,7 +10,6 @@
 # Detail article thumbnail image
 --------------------------------------------------------------*/
 .picture {
-    /*height: 40rem;*/
     height: 30rem;
     position: relative;
     display: block;
@@ -34,9 +33,27 @@
     padding: 0.75rem;
     text-transform: capitalize;
     z-index: 1;
-    background-color: var(--bg-dark);
+    background-color: var(--bg-light);
 }
 
 .articleTitle h1 {
     font-weight: 500;
+}
+
+/*--------------------------------------------------------------
+# Media querys
+--------------------------------------------------------------*/
+@media (min-width: 75rem) {
+    .picture {
+        height: 40rem;
+    }
+}
+
+/*--------------------------------------------------------------
+# Darkmode
+--------------------------------------------------------------*/
+@media (prefers-color-scheme: dark) {
+    .articleTitle {
+        background-color: var(--bg-dark);
+    }
 }
