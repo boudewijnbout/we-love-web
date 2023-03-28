@@ -48,7 +48,7 @@ export default function ArticleDetail({articleData, otherArticlesData}) {
                 {/* Article additional info*/}
                 <section className={styles.aside}>
                     <ArticleInfoCard authorName={articleData.author.name} authorImage={articleData.author.image.url}
-                                     articleDescription={articleData.shortDescription}/>
+                                     articleDescription={articleData.shortDescription} createdAt={articleData.createdAt} updatedAt={articleData.updatedAt}/>
 
                     {/* Article body text */}
                     <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 0.5}}

@@ -3,12 +3,15 @@ import Image from "next/image";
 // Styles
 import styles from "../../styles/components/detail/articleInfoCard.module.css";
 
+// Components
+import Date from "../date";
+
 // Fonts
 import {Rubik} from "next/font/google";
 
 const rubik = Rubik({subsets: ["latin"]});
 
-export default function articleInfoCard({authorName, authorImage, articleDescription}) {
+export default function articleInfoCard({authorName, authorImage, articleDescription, createdAt, updatedAt}) {
     return (
         <>
             <section className={styles.section}>
@@ -35,11 +38,11 @@ export default function articleInfoCard({authorName, authorImage, articleDescrip
                 <div className={styles.articleDates}>
                     <div>
                         <span className={rubik.className}>Datum toegevoegd:</span>
-                        <p className={rubik.className}>09-03-2023</p>
+                        <p className={rubik.className}><Date dateString={createdAt}/></p>
                     </div>
                     <div>
                         <span className={rubik.className}>Laatst gewijzigd:</span>
-                        <p className={rubik.className}>15-03-2023</p>
+                        <p className={rubik.className}><Date dateString={updatedAt}/></p>
                     </div>
                 </div>
             </section>

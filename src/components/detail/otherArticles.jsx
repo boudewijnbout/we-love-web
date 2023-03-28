@@ -21,9 +21,7 @@ export default function otherArticles({otherArticlesData}) {
                 {/* Other articles wrapper */}
                 <div className={styles.otherArticlesWrapper}>
                     {otherArticlesData.map((article) => (
-                        <OtherArticle key={article.id} title={article.title} slug={article.slug} image={article.image.url}
-                                      authorImage={article.author.image.url} authorName={article.author.name}
-                                      readTime={article.readTime}/>
+                        <OtherArticle key={article.id} slug={article.slug} image={article.image.url} />
                     ))}
                 </div>
             </section>

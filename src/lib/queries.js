@@ -69,23 +69,17 @@ export const articleIdQuery = `query Article($slug: String) {
             url
         }
     }
+    createdAt
+    updatedAt
   }
 }`;
 
 export const otherArticlesQuery = `query Articles {
    articles(first: 4) {
      id
-     title
-     readTime
      slug
      image {
         url
-     }
-     author {
-        name 
-        image {
-            url
-        }
      }
    }
 }`;
