@@ -1,38 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# We ❤️ Web Blog
 
-## Getting Started
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/45170095/228235954-9852cf8c-29a5-4ec7-bd72-ce874c88e102.png">
 
-First, run the development server:
+Dit project omvat een blog waarop alle verschillende we love web sessies getoond kunnen worden. Hierdoor zijn deze altijd terug te vinden en gaat deze informatie niet verloren.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## 📚 Inhoudsopgave
+ * [Beschrijving](#beschrijving)
+ * [Kenmerken](#kenmerken)
+ * [Installatie](#installatie)
+ * [Gebruik](#gebruik)
+ * [Bronnen](#bronnen)
+ * [Licentie](#licentie)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ⚡ Kenmerken
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Dit project is gemaakt met NextJS en GraphQL. Verder staat hieronder nog een korte lijst met gebruikte tools en middelen.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+**Tools**
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- 🖥️ VSCode
+- ✍ Pen & Papier
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+**Gebruikte technieken**
 
-## Learn More
+- 🚀 NextJS
+- 💅🏼 CSS
+- 💯 GraphQL
 
-To learn more about Next.js, take a look at the following resources:
+## 📥 Installatie
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone of download deze repository
+2. Ga naar de root directory van het project.
+3. Gebruik `npm install` om de gebruikte dev dependencies en packages te installeren.
+4. Gebruik `npm run dev` om de web-server te starten. Deze is standaard bereikbar op poort `3000`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🔨 Gebruik
 
-## Deploy on Vercel
+De applicatie is op twee manieren te gebruiken: lokaal en op het web. Lokaal is bedoeld voor het testen, experimenten en eventueel verbeteren van de applicatie in een ontwikkel omgeving. Het is ook mogelijk om de applicatie online te bezoeken en te gebruiken, dit kan op onderstaande link:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[Webversie](https://we-love-web-nu.vercel.app/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 📖 Bronnen
+
+[NextJS](https://nextjs.org/)
+<br>
+[GraphQL](https://we-love-web-nu.vercel.app/)
+<br>
+[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+
+## 🔓 Licentie
+
+![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
+
+This work is licensed under [GNU GPLv3](./LICENSE).
