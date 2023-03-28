@@ -1,11 +1,11 @@
 import {motion} from "framer-motion";
 
+// Styles
+import styles from "../../styles/pages/Detail.module.css";
+
 // GraphQL Queries
 import {articleIdQuery, otherArticlesQuery} from "../../lib/queries";
 import {GraphQLClient} from "graphql-request";
-
-// Styles
-import styles from "../../styles/pages/Detail.module.css";
 
 // Components
 import BackLink from "../../components/detail/backLink";

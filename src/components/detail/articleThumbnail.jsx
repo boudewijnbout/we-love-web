@@ -1,5 +1,6 @@
 import Image from "next/image";
 import localFont from "next/font/local";
+import {motion} from "framer-motion";
 
 // Styles
 import styles from "../../styles/components/detail/articleThumbnail.module.css";
@@ -11,7 +12,6 @@ const rubik = Rubik({subsets: ["latin"]});
 const dDicapslock = localFont({ src: "../../../public/fonts/dDicapslock.ttf" });
 const cx = (...classNames) => classNames.join(" ");
 
-import {motion} from "framer-motion";
 
 export default function articleThumbnail({articleData}) {
     return (

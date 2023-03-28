@@ -1,3 +1,4 @@
+// Styles
 import styles from "../styles/components/regularArticles.module.css";
 
 // Components
