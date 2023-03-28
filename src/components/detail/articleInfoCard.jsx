@@ -12,7 +12,6 @@ export default function articleInfoCard({authorName, authorImage, articleDescrip
     return (
         <>
             <section className={styles.section}>
-
                 <span className={rubik.className}>Auteur:</span>
 
                 {/* Author info */}
