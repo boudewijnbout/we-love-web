@@ -18,7 +18,7 @@ export default function articleInfoCard({authorName, authorImage, articleDescrip
                 <div className={styles.authorInfo}>
                     {/* Author image */}
                     <picture>
-                        <Image src={authorImage} width="250" height="250"/>
+                        <Image src={authorImage} alt={authorName} width="250" height="250"/>
                     </picture>
 
                     {/* Author name */}

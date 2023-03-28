@@ -15,6 +15,7 @@ import OtherArticles from "../../components/detail/otherArticles";
 
 // Fonts
 import {Rubik} from "next/font/google";
+import Head from "next/head";
 
 const rubik = Rubik({subsets: ["latin"]});
 const cx = (...classNames) => classNames.join(" ");
@@ -25,6 +26,17 @@ export default function ArticleDetail({articleData, otherArticlesData}) {
 
     return (
         <>
+            {/* Head */}
+            <Head>
+                <title>We Love Web | Blog</title>
+                <meta
+                    name="description"
+                    content="A blog website to view all previous we love web sessions"
+                />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+
             {/* Back to overview */}
             <BackLink/>
 
