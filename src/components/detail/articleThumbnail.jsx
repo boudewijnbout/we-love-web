@@ -17,6 +17,7 @@ export default function articleThumbnail({articleData}) {
     return (
         <>
             <motion.article initial={{ y: -20 }} animate={{ y: 0 }} className={styles.article}>
+
                 {/* Article image */}
                 <picture  className={styles.picture}>
                     <Image fill src={articleData.image.url} alt=""/>
