@@ -1,8 +1,11 @@
 import Head from "next/head";
-import styles from "../styles/pages/Home.module.css";
 import localFont from "next/font/local";
 import { Rubik } from "next/font/google";
 import { GraphQLClient } from "graphql-request";
+import {motion} from "framer-motion";
+
+// Styles
+import styles from "../styles/pages/Home.module.css";
 
 // Components
 import MainInfoArticle from "../components/mainInfoArticle";
@@ -24,8 +27,7 @@ export default function Home({
 	mainInfoArticleData,
 	mainArticleData,
 	articlesData,
-})
-{
+}) {
     return (
 		<>
 			{/* Head */}
@@ -41,14 +43,18 @@ export default function Home({
 
 			{/* Main info */}
 			<main className={styles.main}>
+
 				{/* Main info content */}
 				<section className={styles.section}>
-					<h1 initial={{y: "-50%"}} animate={{ y: 0}} className={dDicapslock.className}>
+					<motion.h1 initial={{y: "-50%"}} animate={{ y: 0 }} className={dDicapslock.className}>
 						We <span>Love</span> Web
-					</h1>
-					<p exit={{ opacity: 0 }} className={rubik.className}>
+					</motion.h1>
+
+					{/* Main intro text */}
+					<motion.p initial={{ y: "100%"}} animate={{ y: 0 }} className={rubik.className}>
 						Een blog om alle gegeven we love web sessies terug te vinden.
-					</p>
+					</motion.p>
+
 					{/* Main info article */}
 					{mainInfoArticleData.articles.map((article) => (
 						<MainInfoArticle

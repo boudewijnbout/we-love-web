@@ -7,6 +7,8 @@ import { Rubik } from "next/font/google";
 const rubik = Rubik({ subsets: ["latin"] });
 const cx = (...classNames) => classNames.join(" ");
 
+import {motion} from "framer-motion";
+
 export default function mainInfoArticle({
 	title,
 	slug,

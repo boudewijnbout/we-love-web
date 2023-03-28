@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import localFont from "next/font/local";
 
 // Styles
 import styles from "../styles/components/mainArticle.module.css";
 
 // Fonts
 import {Rubik} from "next/font/google";
-
+const dDicapslock = localFont({ src: "../../public/fonts/dDicapslock.ttf" });
 const rubik = Rubik({subsets: ["latin"]});
 const cx = (...classNames) => classNames.join(" ");
 
@@ -19,7 +20,7 @@ export default function mainArticle({
                                         authorName,
                                     }) {
     return (
-        <>s
+        <>
             <Link href={`article/${slug}`} className={styles.a}>
                 <article className={styles.article}>
 
@@ -34,7 +35,7 @@ export default function mainArticle({
 
                     {/* Article title */}
                     <div className={styles.articleTitle}>
-                        <h2 className={rubik.className}>{title}</h2>
+                        <h2 className={dDicapslock.className}>{title}</h2>
                     </div>
 
                     {/* Article thumbnail image */}

@@ -1,8 +1,10 @@
 /*--------------------------------------------------------------
 # Other articles wrapper
 --------------------------------------------------------------*/
-.section h1 {
+.section h2 {
     color: var(--color-grey);
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 
 .otherArticlesWrapper {

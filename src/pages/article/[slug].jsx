@@ -1,3 +1,6 @@
+import {motion} from "framer-motion";
+
+// GraphQL Queries
 import {articleIdQuery, otherArticlesQuery} from "../../lib/queries";
 import {GraphQLClient} from "graphql-request";
 
@@ -31,16 +34,18 @@ export default function ArticleDetail({articleData, otherArticlesData}) {
                 <ArticleThumbnail articleData={articleData}/>
 
                 {/* Article additional info*/}
-                <aside className={styles.aside}>
+                <section className={styles.aside}>
                     <ArticleInfoCard authorName={articleData.author.name} authorImage={articleData.author.image.url}
                                      articleDescription={articleData.shortDescription}/>
 
                     {/* Article body text */}
-                    <div className={cx(styles.articleBody, rubik.className)} dangerouslySetInnerHTML={{__html: articleData.body.html}} />
-                </aside>
+                    <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 0.5}}
+                                className={cx(styles.articleBody, rubik.className)}
+                                dangerouslySetInnerHTML={{__html: articleData.body.html}}/>
+                </section>
 
                 {/* Other articles */}
-                <OtherArticles otherArticlesData={otherArticlesData} />
+                <OtherArticles otherArticlesData={otherArticlesData}/>
             </main>
         </>
     );

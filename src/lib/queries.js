@@ -77,6 +77,7 @@ export const otherArticlesQuery = `query Articles {
      id
      title
      readTime
+     slug
      image {
         url
      }

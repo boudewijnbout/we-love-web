@@ -1,11 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
+import localFont from "next/font/local";
 
+// Styles
 import styles from "../styles/components/regularArticle.module.css";
 
 // Fonts
 import { Rubik } from "next/font/google";
 const rubik = Rubik({ subsets: ["latin"] });
+const dDicapslock = localFont({ src: "../../public/fonts/dDicapslock.ttf" });
+
 const cx = (...classNames) => classNames.join(" ");
 
 export default function regularArticle({
@@ -20,6 +24,7 @@ export default function regularArticle({
 		<>
 			<Link href={`/article/${slug}`}>
 				<article className={styles.article}>
+
 					{/* Author information */}
 					<div className={styles.authorInfo}>
 						<picture>
@@ -31,7 +36,7 @@ export default function regularArticle({
 
 					{/* Article title */}
 					<div className={styles.articleTitle}>
-						<h3 className={rubik.className}>{title}</h3>
+						<h3 className={dDicapslock.className}>{title}</h3>
 					</div>
 
 					{/* Article thumbnail image */}

@@ -11,13 +11,14 @@ const rubik = Rubik({subsets: ["latin"]});
 const dDicapslock = localFont({ src: "../../../public/fonts/dDicapslock.ttf" });
 const cx = (...classNames) => classNames.join(" ");
 
+import {motion} from "framer-motion";
 
 export default function articleThumbnail({articleData}) {
     return (
         <>
-            <article className={styles.article}>
+            <motion.article initial={{ y: -20 }} animate={{ y: 0 }} className={styles.article}>
                 {/* Article image */}
-                <picture className={styles.picture}>
+                <picture  className={styles.picture}>
                     <Image fill src={articleData.image.url} alt=""/>
                 </picture>
 
@@ -25,7 +26,7 @@ export default function articleThumbnail({articleData}) {
                 <div className={styles.articleTitle}>
                     <h1 className={dDicapslock.className}>{articleData.title}</h1>
                 </div>
-            </article>
+            </motion.article>
         </>
     );
 }

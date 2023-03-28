@@ -18,12 +18,14 @@
     grid-area: mainContent;
 }
 
+/* Main content title */
 .section h1 {
     font-size: 4rem;
     font-weight: 100;
     margin-bottom: 1.5rem;
 }
 
+/* Shine animation */
 @keyframes shine {
     to {
         background-position: 200% center;
@@ -59,14 +61,13 @@
 @media (min-width: 75rem) {
     .main {
         grid-gap: 1rem;
-        padding: 6.2rem 6.2rem 0 5rem;
+        padding: 4rem 6.2rem 0 5rem;
     }
 }
 
 /*--------------------------------------------------------------
 # Darkmode
 --------------------------------------------------------------*/
-
 @media (prefers-color-scheme: dark) {
     .section h1 span {
         background: linear-gradient(to right, #030303 20%, #00CBA0 40%, #00CBA0 60%, #030303 80%);
