@@ -76,8 +76,27 @@
 /*--------------------------------------------------------------
 # Media querys
 --------------------------------------------------------------*/
-@media (min-width: 62.5rem) {
+@media (min-width: 31.25rem) {
     .section {
+        display: inline-block;
+    }
+
+    .authorInfo {
+        margin-top: 0.85rem;
+    }
+
+    .shortDescription p {
+        max-width: 30rem;
+    }
+}
+
+@media (min-width: 53rem) {
+    .section {
+        margin-top: 0;
+        display: flex;
+    }
+
+    .authorInfo {
         margin-top: 0;
     }
 }

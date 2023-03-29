@@ -9,7 +9,7 @@ export default function otherArticle({image, slug}) {
     return (
         <>
             <Link href={`/article/${slug}`}>
-                <motion.article initial={{y: 15 }} animate={{ y: 0}} transition={{ delay: 0.1 }} className={styles.otherArticle}>
+                <motion.article initial={{ y: 15 }} animate={{ y: 0 }} transition={{ delay: 0.1 }} className={styles.otherArticle}>
 
                     {/* Article thumbnail image */}
                     <picture className={styles.otherArticleThumbnail}>
