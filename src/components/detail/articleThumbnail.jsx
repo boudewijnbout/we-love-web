@@ -12,7 +12,6 @@ const rubik = Rubik({subsets: ["latin"]});
 const dDicapslock = localFont({ src: "../../../public/fonts/dDicapslock.ttf" });
 const cx = (...classNames) => classNames.join(" ");
 
-
 export default function articleThumbnail({articleData}) {
     return (
         <>
@@ -20,7 +19,7 @@ export default function articleThumbnail({articleData}) {
 
                 {/* Article image */}
                 <picture className={styles.picture}>
-                    <Image fill src={articleData.image.url} alt="" />
+                    <Image priority sizes="(min-width: 31.25rem) 100vw, (min-width: 62.5rem) 50vw, 50vw" fill src={articleData.image.url} alt="" />
                 </picture>
 
                 {/* Article title */}

@@ -13,7 +13,7 @@ export default function otherArticle({image, slug}) {
 
                     {/* Article thumbnail image */}
                     <picture className={styles.otherArticleThumbnail}>
-                        <Image src={image} alt="" fill/>
+                        <Image sizes="(min-width: 31.25rem) 50vw, (min-width: 75rem) 33vw, 33vw" src={image} alt="" fill/>
                     </picture>
                 </motion.article>
             </Link>
