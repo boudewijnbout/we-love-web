@@ -90,7 +90,7 @@ export default function Home({
 	);
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
 	const hygraph = new GraphQLClient(process.env.HYGRAPH_ENDPOINT || "");
 	const mainInfoArticleData = await hygraph.request(mainInfoArticleQuery);
 	const mainArticleData = await hygraph.request(mainArticleQuery);
